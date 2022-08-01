@@ -1,0 +1,24 @@
+uuid: 4028ff28-0a0b-435e-afd2-d74447968b61
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: genres
+label: 'Taxonomy Terms'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/[term:vocabulary:name]/[term:name]'
+selection_criteria:
+  aba43d7b-1d2f-4b08-b9b6-a0b4636364a0:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      genres: genres
+      tags: tags
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: aba43d7b-1d2f-4b08-b9b6-a0b4636364a0
+selection_logic: and
+weight: -5
+relationships: {  }

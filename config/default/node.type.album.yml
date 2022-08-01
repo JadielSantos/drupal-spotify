@@ -1,0 +1,18 @@
+uuid: 1e04837d-ddea-4429-b4f8-a81eb5bb82ec
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Album
+type: album
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

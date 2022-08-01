@@ -1,0 +1,44 @@
+uuid: 5c8d7f6a-de73-467e-99ad-09863ab3b9d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.artist.field_albums
+    - field.field.node.artist.field_followers
+    - field.field.node.artist.field_genres
+    - field.field.node.artist.field_picture
+    - field.field.node.artist.field_spotify_id
+    - field.field.node.artist.field_spotify_link
+    - node.type.artist
+  module:
+    - link
+    - user
+id: node.artist.teaser
+targetEntityType: node
+bundle: artist
+mode: teaser
+content:
+  field_picture:
+    type: link
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: true
+      url_plain: true
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_albums: true
+  field_followers: true
+  field_genres: true
+  field_spotify_id: true
+  field_spotify_link: true

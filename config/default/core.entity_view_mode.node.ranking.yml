@@ -1,0 +1,10 @@
+uuid: 335ba4e4-7b00-4c6c-9059-7547bb1896ad
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.ranking
+label: Ranking
+targetEntityType: node
+cache: true

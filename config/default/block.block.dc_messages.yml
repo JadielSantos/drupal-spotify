@@ -1,0 +1,22 @@
+uuid: 9cf78237-9bcb-4c27-baa6-0a12f7a1ca4b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dc
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: dc_messages
+theme: dc
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,19 @@
+uuid: 3b42c324-aa17-41f1-90e7-ba0eaf647c27
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type
+    - node.type.album
+id: node.album.field_type
+field_name: field_type
+entity_type: node
+bundle: album
+label: Type
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

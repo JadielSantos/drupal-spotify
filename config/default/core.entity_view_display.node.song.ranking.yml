@@ -1,0 +1,42 @@
+uuid: cb18c18d-aa64-4080-8800-cb668c90c213
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.ranking
+    - field.field.node.song.field_album
+    - field.field.node.song.field_artists
+    - field.field.node.song.field_genres
+    - field.field.node.song.field_popularity
+    - field.field.node.song.field_release_date
+    - field.field.node.song.field_spotify_id
+    - field.field.node.song.field_spotify_link
+    - node.type.song
+  module:
+    - user
+id: node.song.ranking
+targetEntityType: node
+bundle: song
+mode: ranking
+content:
+  field_album:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: picture
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_artists: true
+  field_genres: true
+  field_popularity: true
+  field_release_date: true
+  field_spotify_id: true
+  field_spotify_link: true

@@ -1,0 +1,23 @@
+uuid: 75f8bc30-fc30-438e-9070-7046f91ba9a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_spotify_link
+    - node.type.artist
+  module:
+    - link
+id: node.artist.field_spotify_link
+field_name: field_spotify_link
+entity_type: node
+bundle: artist
+label: 'Spotify Link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

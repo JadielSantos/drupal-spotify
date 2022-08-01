@@ -1,0 +1,45 @@
+uuid: b76088d0-a608-4f68-b15c-048eb7823bb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.song.field_album
+    - field.field.node.song.field_artists
+    - field.field.node.song.field_genres
+    - field.field.node.song.field_popularity
+    - field.field.node.song.field_release_date
+    - field.field.node.song.field_spotify_id
+    - field.field.node.song.field_spotify_link
+    - node.type.song
+  module:
+    - user
+id: node.song.teaser
+targetEntityType: node
+bundle: song
+mode: teaser
+content:
+  field_album:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: picture
+      link: false
+    third_party_settings: {  }
+  field_artists:
+    type: entity_reference_label
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+hidden:
+  field_genres: true
+  field_popularity: true
+  field_release_date: true
+  field_spotify_id: true
+  field_spotify_link: true
+  links: true

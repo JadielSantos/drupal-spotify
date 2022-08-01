@@ -1,0 +1,23 @@
+uuid: 4ddb8f59-e70e-4045-bd82-9fece2e9157e
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - node
+id: basic_page
+label: 'Basic Page'
+type: 'canonical_entities:node'
+pattern: '/[node:title]'
+selection_criteria:
+  e34fe8c7-62ae-44c8-9191-8d78b8af9b6f:
+    id: 'entity_bundle:node'
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: e34fe8c7-62ae-44c8-9191-8d78b8af9b6f
+selection_logic: and
+weight: -5
+relationships: {  }

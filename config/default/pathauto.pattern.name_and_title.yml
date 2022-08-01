@@ -1,0 +1,25 @@
+uuid: 2942a7a6-1a0b-4406-8b90-ef847034a09d
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - node
+id: name_and_title
+label: 'Name and Title'
+type: 'canonical_entities:node'
+pattern: '/[node:content-type:name]s/[node:title]'
+selection_criteria:
+  1aa446a4-604c-42bd-818e-af778b07798f:
+    id: 'entity_bundle:node'
+    bundles:
+      album: album
+      artist: artist
+      song: song
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 1aa446a4-604c-42bd-818e-af778b07798f
+selection_logic: and
+weight: -5
+relationships: {  }

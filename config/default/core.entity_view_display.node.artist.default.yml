@@ -1,0 +1,77 @@
+uuid: 0f88d8d5-dc1c-44ad-ae27-8e8f1c115e80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.artist.field_albums
+    - field.field.node.artist.field_followers
+    - field.field.node.artist.field_genres
+    - field.field.node.artist.field_picture
+    - field.field.node.artist.field_spotify_id
+    - field.field.node.artist.field_spotify_link
+    - node.type.artist
+  module:
+    - link
+    - user
+id: node.artist.default
+targetEntityType: node
+bundle: artist
+mode: default
+content:
+  field_albums:
+    type: entity_reference_entity_view
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+  field_followers:
+    weight: 5
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_genres:
+    weight: 4
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_picture:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: true
+      url_plain: true
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_spotify_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: true
+      url_plain: true
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_spotify_id: true

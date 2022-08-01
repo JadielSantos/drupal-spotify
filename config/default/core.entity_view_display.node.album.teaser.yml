@@ -1,0 +1,36 @@
+uuid: f57b8a5f-3147-4d3a-90e0-2d6348de9efa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.album.field_picture
+    - field.field.node.album.field_spotify_id
+    - field.field.node.album.field_spotify_link
+    - field.field.node.album.field_type
+    - node.type.album
+  module:
+    - link
+    - user
+id: node.album.teaser
+targetEntityType: node
+bundle: album
+mode: teaser
+content:
+  field_picture:
+    type: link
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: true
+      url_plain: true
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+hidden:
+  field_spotify_id: true
+  field_spotify_link: true
+  field_type: true
+  links: true

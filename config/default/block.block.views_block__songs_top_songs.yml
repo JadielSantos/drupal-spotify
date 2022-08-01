@@ -1,0 +1,38 @@
+uuid: 6ef1fc65-42c2-4561-ab0a-20d717f199fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.songs
+  module:
+    - ctools
+    - system
+    - views
+  theme:
+    - dc
+id: views_block__songs_top_songs
+theme: dc
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:songs-top_songs'
+settings:
+  id: 'views_block:songs-top_songs'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: /home
+    negate: false
+    context_mapping: {  }

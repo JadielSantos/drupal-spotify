@@ -1,0 +1,9 @@
+# Ignore binaries.
+/bin
+
+.idea/
+.vscode/
+docker-compose.yml
+docroot/sites/*/settings.local.php
+docroot/sites/*/files
+.DS_Store

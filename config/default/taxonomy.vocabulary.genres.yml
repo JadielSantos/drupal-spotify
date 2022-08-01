@@ -1,0 +1,8 @@
+uuid: b97dbb15-4492-4fc6-b085-83c042ab65da
+langcode: en
+status: true
+dependencies: {  }
+name: Genres
+vid: genres
+description: 'Artists and Songs genres.'
+weight: 0

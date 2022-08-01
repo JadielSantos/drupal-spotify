@@ -1,0 +1,10 @@
+uuid: 5b527bce-49af-4853-b017-e59489808b01
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.picture
+label: Picture
+targetEntityType: node
+cache: true

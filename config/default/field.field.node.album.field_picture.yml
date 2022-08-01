@@ -1,0 +1,23 @@
+uuid: 9f94b44a-50f7-4186-91f8-03e39838bfb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_picture
+    - node.type.album
+  module:
+    - link
+id: node.album.field_picture
+field_name: field_picture
+entity_type: node
+bundle: album
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

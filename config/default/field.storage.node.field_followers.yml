@@ -1,0 +1,20 @@
+uuid: 597830f0-3c42-4d91-a89f-26f4b87983b3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_followers
+field_name: field_followers
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
